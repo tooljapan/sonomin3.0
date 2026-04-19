@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>そのみん（桃子）コンテンツ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@700;800&family=Noto+Sans+JP:wght@400;700&display=swap');
+
+        :root {
+            --peach-light: #fff5f2;
+            --peach-main: #ffb6c1;
+            --peach-dark: #d88395;
+            --text-brown: #5d4037;
+        }
+
+        body {
+            font-family: "UD Digi Kyokasho N-R", "UD デジタル 教科書体 N-R", "Noto Sans JP", sans-serif;
+            background-color: var(--peach-light);
+            color: var(--text-brown);
+            line-height: 1.8;
+        }
+
+        .font-serif-jp { font-family: 'Shippori Mincho', serif; }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 24px;
+            box-shadow: 0 10px 25px rgba(216, 131, 149, 0.1);
+        }
+
+        .header-gradient {
+            background: linear-gradient(135deg, #fce4ec 0%, #fff1f0 100%);
+        }
+
+        .btn-peach {
+            background: linear-gradient(90deg, #ff8a80, #ff5252);
+            box-shadow: 0 4px 12px rgba(255, 82, 82, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .btn-peach:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(255, 82, 82, 0.3);
+            filter: brightness(1.05);
+        }
+
+        .btn-peach:active {
+            transform: scale(0.95);
+        }
+
+        .deco-circle {
+            position: fixed;
+            border-radius: 50%;
+            filter: blur(50px);
+            z-index: -1;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body class="min-h-screen pb-20">
+
+    <div class="deco-circle bg-pink-100 w-64 h-64 -top-20 -left-20"></div>
+    <div class="deco-circle bg-orange-50 w-80 h-80 bottom-0 -right-20"></div>
+
+    <header class="header-gradient py-16 px-6 text-center border-b border-white shadow-sm mb-10">
+        <div class="max-w-2xl mx-auto">
+            <div class="inline-block bg-white/60 px-4 py-1 rounded-full text-[10px] font-bold tracking-[0.3em] text-rose-400 mb-6 uppercase">
+                Special Gift for You
+            </div>
+            <h1 class="text-3xl md:text-5xl font-serif-jp font-black mb-6 leading-tight tracking-tighter">
+                そのみん（桃子）<br>コンテンツ
+            </h1>
+            <p class="text-sm md:text-base text-slate-500 max-w-md mx-auto leading-relaxed">
+                ご登録ありがとうございます。<br>
+                あなたの毎日を軽やかにする、4つのプレゼントをお届けします。
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-xl mx-auto px-5 space-y-12">
+
+        <section class="text-center space-y-4">
+            <h2 class="text-xl font-bold font-serif-jp text-rose-500">自分を大切にする一歩に</h2>
+            <p class="text-sm text-slate-600 leading-relaxed">
+                日々の生活の中で、つい自分のことは後回しになっていませんか？<br>
+                これらの内容が、あなたの心と体の健康、そして未来の安心を支えるきっかけになれば幸いです。
+            </p>
+        </section>
+
+        <div class="grid gap-8">
+            
+            <div class="glass-card p-6 md:p-8 flex flex-col md:flex-row gap-6 items-start">
+                <div class="bg-rose-50 w-16 h-16 rounded-2xl flex items-center justify-center text-rose-400 text-2xl flex-shrink-0 shadow-inner">
+                    <i class="fas fa-file-medical"></i>
+                </div>
+                <div class="flex-1 w-full">
+                    <h3 class="text-lg font-bold mb-2">ストレス＆健康チェック</h3>
+                    <p class="text-[11px] md:text-xs text-slate-400 mb-6 leading-relaxed">
+                        今の疲れやストレス度を客観的に診断。自分の「現在地」を知ることで、自分を労わるための適切なケアが見えてきます。
+                    </p>
+                    <a href="1.pdf" target="_blank" class="inline-block w-full py-4 text-center text-white text-sm font-bold rounded-full btn-peach">
+                        コンテンツを受け取る
+                    </a>
+                </div>
+            </div>
+
+            <div class="glass-card p-6 md:p-8 flex flex-col md:flex-row gap-6 items-start">
+                <div class="bg-blue-50 w-16 h-16 rounded-2xl flex items-center justify-center text-blue-400 text-2xl flex-shrink-0 shadow-inner">
+                    <i class="fas fa-shield-heart"></i>
+                </div>
+                <div class="flex-1 w-full">
+                    <h3 class="text-lg font-bold mb-2">心の守り方ガイド</h3>
+                    <p class="text-[11px] md:text-xs text-slate-400 mb-6 leading-relaxed">
+                        夫の言葉に傷ついたとき、「私がいけないの？」という自責を止め、心を落ち着かせるための具体的なアクション集です。
+                    </p>
+                    <a href="2.pdf" target="_blank" class="inline-block w-full py-4 text-center text-white text-sm font-bold rounded-full btn-peach" style="background: linear-gradient(90deg, #64b5f6, #1e88e5);">
+                        コンテンツを受け取る
+                    </a>
+                </div>
+            </div>
+
+            <div class="glass-card p-6 md:p-8 flex flex-col md:flex-row gap-6 items-start">
+                <div class="bg-emerald-50 w-16 h-16 rounded-2xl flex items-center justify-center text-emerald-400 text-2xl flex-shrink-0 shadow-inner">
+                    <i class="fas fa-laptop-house"></i>
+                </div>
+                <div class="flex-1 w-full">
+                    <h3 class="text-lg font-bold mb-2">50代からの働き方</h3>
+                    <p class="text-[11px] md:text-xs text-slate-400 mb-6 leading-relaxed">
+                        体力や今の生活を大切にしながら、年金前後も無理なく続けられる「タイプ別」の収益の考え方を詳しく提案。
+                    </p>
+                    <a href="3.pdf" target="_blank" class="inline-block w-full py-4 text-center text-white text-sm font-bold rounded-full btn-peach" style="background: linear-gradient(90deg, #81c784, #43a047);">
+                        コンテンツを受け取る
+                    </a>
+                </div>
+            </div>
+
+            <div class="glass-card p-6 md:p-8 flex flex-col md:flex-row gap-6 items-start">
+                <div class="bg-amber-50 w-16 h-16 rounded-2xl flex items-center justify-center text-amber-500 text-2xl flex-shrink-0 shadow-inner">
+                    <i class="fas fa-coins"></i>
+                </div>
+                <div class="flex-1 w-full">
+                    <h3 class="text-lg font-bold mb-2">年金・老後不安解消ガイド</h3>
+                    <p class="text-[11px] md:text-xs text-slate-400 mb-6 leading-relaxed">
+                        年金定期便の見方から、老後の資金ギャップを埋めるための具体的な行動リストを、初心者向けにまとめました。
+                    </p>
+                    <a href="4.pdf" target="_blank" class="inline-block w-full py-4 text-center text-white text-sm font-bold rounded-full btn-peach" style="background: linear-gradient(90deg, #ffb74d, #f57c00);">
+                        コンテンツを受け取る
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <section class="pt-10 text-center">
+            <div class="text-rose-300 text-2xl mb-6">
+                <i class="fas fa-heart"></i>
+            </div>
+            <h2 class="text-lg font-bold mb-4 font-serif-jp">最後までお読みいただき<br>ありがとうございました</h2>
+            <p class="text-xs text-slate-500 max-w-sm mx-auto leading-relaxed">
+                これらのコンテンツが、あなたの明日を少しでも<br>
+                軽やかに、明るいものにするお手伝いができることを願っています。
+            </p>
+            
+            <div class="mt-16 text-[10px] font-bold text-slate-400 tracking-[0.2em] uppercase">
+                &copy; そのみん（桃子）
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
